@@ -51,12 +51,68 @@
   border: 3px solid #fe4880;
   border-radius: 5px;
   background-image: linear-gradient(to right, transparent 50%, #fe4880 50%);
-  background-size: 200%;
+  background-size: 1000%;
   background-position: 0%;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .btn-2:hover {
   color: #fff;
   background-position: 100%;
+}
+
+/* BTN-3 */
+
+.btn-3 {
+  padding: 20px 40px;
+  border: 3px solid #11ac19;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #11ac19;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.btn-3:hover {
+  background: #11ac19;
+  color: #fff;
+}
+
+/* BTN-4 */
+
+.btn-4 {
+  padding: 20px 30px;
+  border: 2px solid #17c3b2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17c3b2;
+}
+
+.btn-4::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17c3b2;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.btn-4:hover::before {
+  width: 105%;
+}
+
+.btn-4:hover {
+  color: #111;
 }
