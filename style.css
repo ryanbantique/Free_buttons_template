@@ -116,3 +116,16 @@
 .btn-4:hover {
   color: #111;
 }
+
+/* BTN-5 */
+
+.btn-5 > * {
+  background: transparent;
+  text-decoration: none;
+  padding: 20px 40px;
+  color: #111;
+}
+
+.btn-5:hover {
+  border-top: #111;
+}
